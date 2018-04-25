@@ -223,6 +223,7 @@ application:
         print: true
       history:
         cache: true
+      exchange-rate:true
   rest:
     support:
       host: static.mifanxing.com
