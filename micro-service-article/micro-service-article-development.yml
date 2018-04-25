@@ -221,5 +221,5 @@ application:
 mifan:
   proxy:
     isUse: false
-    server: 192.168.1.138
+    server: 192.168.1.229
     port: 3128
