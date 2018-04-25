@@ -216,7 +216,7 @@ application:
   scheduler:
     enable:
       index: true
-      exchange-rate:true
+      exchange-rate: true
       translation: true
       update:
         timer: true
