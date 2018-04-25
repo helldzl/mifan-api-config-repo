@@ -216,6 +216,7 @@ application:
   scheduler:
     enable:
       index: true
+      exchange-rate:true
       translation: true
       update:
         timer: true
@@ -223,7 +224,6 @@ application:
         print: true
       history:
         cache: true
-      exchange-rate:true
   rest:
     support:
       host: static.mifanxing.com
