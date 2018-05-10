@@ -218,6 +218,7 @@ application:
       index: true
       exchange-rate: true
       translation: true
+      mail: true
       update:
         timer: true
       water:
