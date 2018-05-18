@@ -147,6 +147,13 @@ hystrix:
           strategy: SEMAPHORE
           thread:
             timeoutInMilliseconds: 60000
+    micro-service-wxrank:
+      execution:
+        isolation:
+          strategy: SEMAPHORE
+          thread:
+            timeoutInMilliseconds: 60000
+
 
 ribbon:
   ConnectTimeout: 10000
