@@ -180,7 +180,7 @@ moon:
 ##########################
 application:
   image:
-    baseUrl: http://static.budee.com/yyren/image/
+    baseUrl: http://static.budee.com/yyren/wx/image/
   scheduler:
     enable:
       rank: true
