@@ -17,6 +17,9 @@ server:
   port: 8198
   session:
     timeout: 28800
+ribbon:
+  readtimeout: 300000
+  connecttimeout: 60000
 
 ##############
 ### SPRING ###
