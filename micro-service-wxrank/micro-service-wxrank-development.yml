@@ -128,7 +128,7 @@ hystrix:
         isolation:
           strategy: SEMAPHORE
           thread:
-            timeoutInMilliseconds: 60000
+            timeoutInMilliseconds: 300000
     micro-service-article:
       execution:
         isolation:
