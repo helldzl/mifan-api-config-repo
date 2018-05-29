@@ -75,6 +75,10 @@ zuul:
       path: /user/**
       serviceId: micro-service-user
       sensitiveHeaders:
+    route-wxrank:
+      path: /wxrank/**
+      serviceId: micro-service-wxrank
+      sensitiveHeaders:
 
 # http://cloud.spring.io/spring-cloud-static/Edgware.RELEASE/single/spring-cloud.html#_uploading_files_through_zuul
 # https://github.com/Netflix/Hystrix/wiki/Configuration#execution.isolation.thread.timeoutInMilliseconds
@@ -106,6 +110,11 @@ hystrix:
           thread:
             timeoutInMilliseconds: 60000
     micro-service-user:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+    micro-service-wxrank:
       execution:
         isolation:
           thread:
