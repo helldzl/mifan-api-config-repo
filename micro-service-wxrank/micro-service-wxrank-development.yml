@@ -1,4 +1,4 @@
-﻿##############
+##############
 ### EUREKA ###
 ##############
 # eureka.client.healthcheck.enabled=true should only be set in application.yml. Setting the value in bootstrap.yml will cause undesirable side effects like registering in eureka with an UNKNOWN status.
