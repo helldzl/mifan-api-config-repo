@@ -212,7 +212,8 @@ moon:
 ##########################
 application:
   image:
-    baseUrl: http://static.budee.com/yyren/image/
+    baseUrl: //static.mifanxing.com/article/image/
+    mpUrl: //static.mifanxing.com/91yp/
   scheduler:
     enable:
       index: false
