@@ -194,7 +194,7 @@ moon:
 ##########################
 application:
   image:
-    baseUrl: http://static.budee.com/yyren/wx/image/
+    baseUrl: //static.mifanxing.com/wx/image/
   scheduler:
     enable:
       rank: true
