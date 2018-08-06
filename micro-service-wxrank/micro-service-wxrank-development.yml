@@ -188,6 +188,7 @@ application:
   scheduler:
     enable:
       rank: true
+      region: true
   rest:
     support:
       host: 192.168.1.248
