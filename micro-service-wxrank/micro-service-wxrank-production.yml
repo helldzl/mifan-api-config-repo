@@ -198,6 +198,7 @@ application:
   scheduler:
     enable:
       rank: true
+      region: true
   rest:
     support:
       host: static.mifanxing.com
