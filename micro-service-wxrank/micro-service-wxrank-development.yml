@@ -9,8 +9,6 @@ eureka:
   instance:
     lease-expiration-duration-in-seconds: 30    # 续约到期时间
     lease-renewal-interval-in-seconds: 10       # 续约更新时间间隔
-zyw:
-  test: 张大拿
 ########################################################
 ### EMBEDDED SERVER CONFIGURATION (ServerProperties) ###
 ########################################################
@@ -189,6 +187,7 @@ application:
     enable:
       rank: true
       region: true
+      segment: true
   rest:
     support:
       host: 192.168.1.248
