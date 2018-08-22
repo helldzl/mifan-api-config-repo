@@ -163,9 +163,9 @@ moon:
       vpn-seeds-data-queue: vpn.data.direct.queue4
       seeds-exchange: seeds.direct.exchange4
       seeds-data-queue: seeds.data.direct.queue4
-      # Text queue, Classification, Clustering
-      analyzer-exchange: server.data.direct.analyzer.exchange
-      analyzer-queue: server.data.direct.analyzer.queue
+      # nlp queue
+      nlp-exchange: server.data.direct.nlp.exchange
+      nlp-queue: server.data.direct.nlp.queue
   jsch:
     host: 192.168.1.248
     port: 22
