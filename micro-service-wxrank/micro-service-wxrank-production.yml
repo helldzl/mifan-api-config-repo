@@ -173,9 +173,9 @@ moon:
       vpn-seeds-data-queue: vpn.data.direct.queue4
       seeds-exchange: seeds.direct.exchange4
       seeds-data-queue: seeds.data.direct.queue4
-      # Text queue, Classification, Clustering
-      analyzer-exchange: server.data.direct.analyzer.exchange
-      analyzer-queue: server.data.direct.analyzer.queue
+      # nlp queue
+      nlp-exchange: server.data.direct.nlp.exchange
+      nlp-queue: server.data.direct.nlp.queue
   jsch:
     host: 10.31.236.67
     port: 22
@@ -199,6 +199,7 @@ application:
     enable:
       rank: true
       region: true
+      segment: true
   rest:
     support:
       host: static.mifanxing.com
