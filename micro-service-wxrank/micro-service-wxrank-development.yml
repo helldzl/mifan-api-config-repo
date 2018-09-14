@@ -188,6 +188,7 @@ application:
       rank: true
       region: true
       segment: true
+      index: true
   rest:
     support:
       host: 192.168.1.248
