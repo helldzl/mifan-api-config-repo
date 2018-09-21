@@ -156,6 +156,8 @@ moon:
   data:
     token:
       salt: '{cipher}5227e37982548a2ba359053dc03ed4110c028d051cf136416156babac0b483c9ec3c169790e46352e0b599c6227e554dd9def7f1f7780611ae36af2ae8336797'
+    elasticsearch:
+      host: 10.31.40.4
   amqp:
     rabbit:
       remote-exchange: remote.direct.exchange3
@@ -200,6 +202,7 @@ application:
       rank: true
       region: true
       segment: true
+      index: true
   rest:
     support:
       host: static.mifanxing.com
