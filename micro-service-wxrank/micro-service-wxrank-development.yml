@@ -43,7 +43,7 @@ spring:
     initialize: false
     schema: classpath:schema.sql                              # 指定数据库的建表脚本
     data: classpath:data.sql                                  # 指定数据库的数据脚本
-    url: jdbc:mariadb://192.168.1.138:3306/mifan_wx?useUnicode=true&autoReconnect=true
+    url: jdbc:mariadb://192.168.1.47:3306/mifan_wx?useUnicode=true&autoReconnect=true
     username: '{cipher}bd2df062909871910aa7fcae387968efc8d16f4681258945822b919293cadf92'
     password: '{cipher}125404302d4fed5b3f345c70916b3a24df970d6b6eae0af7dc53fe7febcd82d5'
     driver-class-name: org.mariadb.jdbc.Driver
