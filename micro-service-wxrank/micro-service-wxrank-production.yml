@@ -203,6 +203,7 @@ application:
       region: true
       segment: true
       index: true
+      simliar: true
   rest:
     support:
       host: static.mifanxing.com
