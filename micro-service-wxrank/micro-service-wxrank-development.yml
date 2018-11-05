@@ -90,6 +90,7 @@ spring:
       enabled: always
   thymeleaf:
     cache: false
+    mode:LEGACYHTML5
 
 ###########################
 ### SECURITY PROPERTIES ###
