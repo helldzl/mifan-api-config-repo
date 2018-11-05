@@ -88,6 +88,8 @@ spring:
   output:
     ansi:
       enabled: always
+  thymeleaf:
+    cache: false
 
 ###########################
 ### SECURITY PROPERTIES ###
