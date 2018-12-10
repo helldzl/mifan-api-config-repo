@@ -40,7 +40,7 @@ spring:
       enabled: true
       file-size-threshold: 0
       location:
-      max-file-size: 11MB
+      max-file-size: 10MB
       max-request-size: 10MB
       resolve-lazily: false
   jpa:
@@ -148,6 +148,7 @@ hystrix:
           thread:
             timeoutInMilliseconds: 60000
 
+
 ribbon:
   ConnectTimeout: 10000
   ReadTimeout: 60000
@@ -161,7 +162,7 @@ moon:
     token:
       salt: '{cipher}5227e37982548a2ba359053dc03ed4110c028d051cf136416156babac0b483c9ec3c169790e46352e0b599c6227e554dd9def7f1f7780611ae36af2ae8336797'
     elasticsearch:
-      host: 192.168.1.138
+      host: 192.168.1.229
   amqp:
     rabbit:
       remote-exchange: remote.direct.exchange2
@@ -201,11 +202,14 @@ moon:
 ##########################
 application:
   image:
-    baseUrl: http://static.budee.com/yyren/image/
+    baseUrl: //static.mifanxing.com/article/image/
+    mpUrl: //static.mifanxing.com/91yp/
   scheduler:
     enable:
-      index: false
+      index: true
+      exchange-rate: true
       translation: false
+      mail: false
       update:
         timer: false
       water:
@@ -218,3 +222,8 @@ application:
   admin:
     quartz:                           ### 是否开启后台管理的调度中心
       enable: true
+mifan:
+  proxy:
+    isUse: false
+    server: 192.168.1.229
+    port: 3128
