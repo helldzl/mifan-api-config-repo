@@ -226,6 +226,8 @@ application:
         print: true
       history:
         cache: true
+      send:
+        topic: true
   rest:
     support:
       host: static.mifanxing.com
