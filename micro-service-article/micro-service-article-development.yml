@@ -185,7 +185,7 @@ moon:
       analyzer-queue: server.data.direct.analyzer.queue
       # nlp queue
       nlp-exchange: article.data.direct.nlp.exchange
-      nlp-queue: article.data.direct.articlenlp.queue
+      nlp-queue: article.data.direct.nlp.queue
   jsch:
     host: 192.168.1.248
     port: 22
