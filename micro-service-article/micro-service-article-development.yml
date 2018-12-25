@@ -219,6 +219,8 @@ application:
         print: false
       history:
         cache: false
+      send: 
+        topic: true
   rest:
     support:
       host: 192.168.1.248
