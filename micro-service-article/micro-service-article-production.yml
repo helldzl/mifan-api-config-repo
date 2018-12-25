@@ -193,6 +193,9 @@ moon:
       # Text queue, Classification, Clustering
       analyzer-exchange: server.data.direct.analyzer.exchange
       analyzer-queue: server.data.direct.analyzer.queue
+      # nlp queue
+      nlp-exchange: article.data.direct.nlp.exchange
+      nlp-queue: article.data.direct.nlp.queue
   jsch:
     host: 10.31.236.67
     port: 22
