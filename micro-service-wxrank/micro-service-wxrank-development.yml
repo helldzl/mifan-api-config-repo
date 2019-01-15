@@ -106,6 +106,7 @@ security:
 ### LOGGING ###
 ###############
 logging:
+  D:\nlp\wxrank_log
   level:
     root: INFO
     org.hibernate: INFO                                       # 配置日志级别，让hibernate打印出执行的SQL
