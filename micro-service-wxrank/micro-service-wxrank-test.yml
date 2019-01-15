@@ -88,6 +88,9 @@ spring:
   output:
     ansi:
       enabled: always
+  thymeleaf:
+    cache: false
+    mode: LEGACYHTML5
 
 ###########################
 ### SECURITY PROPERTIES ###
@@ -191,6 +194,7 @@ application:
       region: true
       segment: true
       index: true
+      simliar: true
   rest:
     support:
       host: 192.168.1.248
