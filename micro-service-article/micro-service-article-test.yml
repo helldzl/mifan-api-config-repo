@@ -113,6 +113,7 @@ security:
 ### LOGGING ###
 ###############
 logging:
+  path: D:\nlp\article_log
   level:
     root: INFO
     org.hibernate: INFO                                       # 配置日志级别，让hibernate打印出执行的SQL
