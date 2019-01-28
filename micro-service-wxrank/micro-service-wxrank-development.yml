@@ -21,7 +21,7 @@ ribbon:
   connecttimeout: 60000
 
 test:
-  hello: nihao
+  hello: nihao update
 
 ##############
 ### SPRING ###
