@@ -20,6 +20,9 @@ ribbon:
   readtimeout: 300000
   connecttimeout: 60000
 
+test:
+  hello: nihao
+
 ##############
 ### SPRING ###
 ##############
