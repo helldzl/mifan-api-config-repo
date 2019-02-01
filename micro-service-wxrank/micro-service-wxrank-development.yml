@@ -20,8 +20,13 @@ ribbon:
   readtimeout: 300000
   connecttimeout: 60000
 
-test:
-  hello: nihao new
+############
+##Actuator##
+############
+management:
+  endpoint:
+    health:
+      show-details: always
 
 ##############
 ### SPRING ###
