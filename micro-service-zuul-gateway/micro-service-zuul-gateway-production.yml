@@ -45,7 +45,13 @@ logging:
     root: INFO
     org.springframework.cloud: INFO
     org.springframework.boot: INFO
-
+############
+##Actuator##
+############
+management:
+  endpoint:
+    health:
+      show-details: always
 ############
 ### ZUUL ###
 ############
