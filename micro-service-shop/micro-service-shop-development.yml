@@ -33,7 +33,7 @@ spring:
     sampler:
       percentage: 1.0
   application:
-    name: micro-service-wxrank
+    name: micro-service-shop
   jpa:
     generate-ddl: false
     show-sql: false
