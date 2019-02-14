@@ -179,7 +179,7 @@ moon:
     strict-host-key-checking: true
   model:
     mybatis:
-      config-location: com/mifan/wxrank/mybatis-config.xml
+      config-location: com/mifan/shop/mybatis-config.xml
   web:
     micro-service:
       enabled: true
