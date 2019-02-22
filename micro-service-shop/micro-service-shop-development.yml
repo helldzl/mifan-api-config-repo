@@ -190,7 +190,7 @@ application:
       host: 192.168.1.248
   admin:
     quartz:                           ### 是否开启后台管理的调度中心
-      enable: true
+      enable: false
 mifan:
   proxy:
     isUse: false
