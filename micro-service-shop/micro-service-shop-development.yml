@@ -93,7 +93,7 @@ spring:
 ###########################
 security:
   basic:
-    enabled: true
+    enabled: false
   user:
     name: '{cipher}7b1cbaf8875ed857df8d361cbbe1a3b64107e0992863cab5efed24f26928fbca'
     password: '{cipher}7b1cbaf8875ed857df8d361cbbe1a3b64107e0992863cab5efed24f26928fbca'
@@ -114,11 +114,11 @@ logging:
 #############
 ### FEIGN ###
 #############
-#feign:
-  #httpclient:
-    #connection-timeout: 10000
-  #hystrix:
-    #enabled: true
+feign:
+  httpclient:
+    connection-timeout: 10000
+  hystrix:
+    enabled: true
 
 ############################# To set thread isolation to SEMAPHORE,
 ### FEIGN HYSTRIX SUPPORT ### RequestContextHolder.getRequestAttributes() read from Thread Local, so need to set hystrix isolation strategy to SEMAPHORE
