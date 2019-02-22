@@ -109,11 +109,11 @@ logging:
 #############
 ### FEIGN ###
 #############
-feign:
-  httpclient:
-    connection-timeout: 10000
-  hystrix:
-    enabled: true
+#feign:
+  #httpclient:
+    #connection-timeout: 10000
+  #hystrix:
+    #enabled: true
 
 ############################# To set thread isolation to SEMAPHORE,
 ### FEIGN HYSTRIX SUPPORT ### RequestContextHolder.getRequestAttributes() read from Thread Local, so need to set hystrix isolation strategy to SEMAPHORE
@@ -190,9 +190,9 @@ application:
       host: 192.168.1.248
   admin:
     quartz:                           ### 是否开启后台管理的调度中心
-      enable: false
-mifan:
-  proxy:
-    isUse: false
-    server: 192.168.1.138
-    port: 3128
+      enable: true
+#mifan:
+  #proxy:
+    #isUse: false
+    #server: 192.168.1.138
+    #port: 3128
