@@ -157,6 +157,7 @@ mifan:
     rabbit:
       exchange: support.exchange
       eventlog:
-        queue: support.eventlog.queue
+        queue: 
+          name: support.eventlog.queue
           max-length: 100000
         routingkey: event.log.#
