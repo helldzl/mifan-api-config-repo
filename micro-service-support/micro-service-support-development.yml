@@ -152,3 +152,11 @@ moon:
 ##########################
 ### APPLICATION CONFIG ###
 ##########################
+mifan:
+  amqp:
+    rabbit:
+      exchange: support.exchange
+      eventlog:
+        queue: support.eventlog.queue
+          max-length: 100000
+        routingkey: event.log.#
