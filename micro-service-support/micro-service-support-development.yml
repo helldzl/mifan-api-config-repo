@@ -62,6 +62,16 @@ spring:
     port: 5672
     username: '{cipher}c473d35322c2826fe0cd5f169d3a2e7b656b2f8940830ed2e4bdc694bc9b5324'
     password: '{cipher}c473d35322c2826fe0cd5f169d3a2e7b656b2f8940830ed2e4bdc694bc9b5324'
+    requested-heartbeat: 60
+    listener:
+      simple:
+        acknowledge-mode: auto
+    template:
+      receive-timeout: 0
+      reply-timeout: 30000
+      retry:
+        enabled: true
+        multiplier: 10.0
   redis:
     host: 192.168.1.138
     port: 6379
