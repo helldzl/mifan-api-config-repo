@@ -152,12 +152,12 @@ moon:
 ##########################
 ### APPLICATION CONFIG ###
 ##########################
-mifan:
-  amqp:
+mifanxing:
     rabbit:
-      exchange: support.exchange
-      eventlog:
         queue: 
-          name: support.eventlog.queue
-          max-length: 100000
-        routingkey: event.log.#
+            max-length: 100000
+            event-log:
+                normal: support.event-log.normal
+                wait: support.event-log.wait
+        exchange: support.topic-exchange
+        routing-key: support.#
