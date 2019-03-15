@@ -9,7 +9,6 @@ eureka:
   instance:
     lease-expiration-duration-in-seconds: 30    # 续约到期时间
     lease-renewal-interval-in-seconds: 10       # 续约更新时间间隔
-
 ########################################################
 ### EMBEDDED SERVER CONFIGURATION (ServerProperties) ###
 ########################################################
@@ -30,9 +29,7 @@ spring:
   ##############
   # If using Zipkin, configure the percentage of spans exported using spring.sleuth.sampler.percentage (default 0.1, i.e. 10%). Otherwise you might think that Sleuth is not working cause it’s omitting some spans.
   # Percentage of requests that should be sampled. E.g. 1.0 - 100% requests should be sampled. The precision is whole-numbers only (i.e. there’s no support for 0.1% of the traces).
-  sleuth:
-    sampler:
-      percentage: 1.0
+
   application:
     name: micro-service-shop
   jpa:
@@ -45,20 +42,9 @@ spring:
     schema: classpath:schema.sql                              # 指定数据库的建表脚本
     data: classpath:data.sql                                  # 指定数据库的数据脚本
     url: jdbc:mariadb://10.31.40.4:3306/mifan_shopping?useUnicode=true&autoReconnect=true
-    username: '{cipher}ee0f47d79c7962d74bf05e5227c7d85c8b68cba4dadc25bdf41e1a0196a4a27c'
-    password: '{cipher}d2d4229be8bd6ee1b5b525aaaa379afadd194fcad6dfc75efe73bf7762574c80'
+    username: '{cipher}bd2df062909871910aa7fcae387968efc8d16f4681258945822b919293cadf92'
+    password: '{cipher}125404302d4fed5b3f345c70916b3a24df970d6b6eae0af7dc53fe7febcd82d5'
     driver-class-name: org.mariadb.jdbc.Driver
-    max-active: 1000
-    max-idle: 8
-    min-idle: 1
-    initial-size: 10
-    validation-query=: SELECT 'x' FROM DUAL
-    test-on-borrow: true
-    test-on-return: false
-    test-while-idle: true
-    time-between-eviction-runs-millis: 3000
-    min-evictable-idle-time-millis: 30000
-    max-wait: 60000
     tomcat:
       max-active: 100
       max-wait: 60000
@@ -100,9 +86,7 @@ spring:
   output:
     ansi:
       enabled: always
-  #thymeleaf:
-    #cache: false
-    #mode: LEGACYHTML5
+
 
 ###########################
 ### SECURITY PROPERTIES ###
@@ -111,8 +95,8 @@ security:
   basic:
     enabled: false
   user:
-    name: '{cipher}8f3f803c47eb5f10ed8ef634d368ecc3ffbba9e4f1a8586294aa1b00184dbcd2'
-    password: '{cipher}f9621ba1d0b0fec59454052ad379df2703953a9caa7bfb0957af50c570e03cfb'
+    name: '{cipher}7b1cbaf8875ed857df8d361cbbe1a3b64107e0992863cab5efed24f26928fbca'
+    password: '{cipher}7b1cbaf8875ed857df8d361cbbe1a3b64107e0992863cab5efed24f26928fbca'
 
 ###############
 ### LOGGING ###
@@ -161,32 +145,32 @@ moon:
       salt: '{cipher}5227e37982548a2ba359053dc03ed4110c028d051cf136416156babac0b483c9ec3c169790e46352e0b599c6227e554dd9def7f1f7780611ae36af2ae8336797'
     elasticsearch:
       host: 10.31.40.4
-  #amqp:
-    #rabbit:
-      #remote-exchange: remote.direct.exchange3
-      #remote-queue: remote.direct.queue3
-      #server-data-queue: server.data.direct.queue3
-      #server-data-exchange: server.data.direct.exchange3
-      #client-data-queue: client.data.direct.queue3
-      #client-data-exchange: client.data.direct.exchange3
-      #server-event-queue: server.event.direct.queue3
-      #server-event-exchange: server.event.direct.exchange3
-      #client-event-exchange: client.event.direct.exchange3
-      #client-event-queue: client.event.direct.queue3
+  amqp:
+    rabbit:
+      remote-exchange: remote.direct.exchange3
+      remote-queue: remote.direct.queue3
+      server-data-queue: server.data.direct.queue3
+      server-data-exchange: server.data.direct.exchange3
+      client-data-queue: client.data.direct.queue3
+      client-data-exchange: client.data.direct.exchange3
+      server-event-queue: server.event.direct.queue3
+      server-event-exchange: server.event.direct.exchange3
+      client-event-exchange: client.event.direct.exchange3
+      client-event-queue: client.event.direct.queue3
       # Spider queue
-      #vpn-seeds-exchange: vpn.direct.exchange4
-      #vpn-seeds-data-queue: vpn.data.direct.queue4
-      #seeds-exchange: seeds.direct.exchange4
-      #seeds-data-queue: seeds.data.direct.queue4
+      vpn-seeds-exchange: vpn.direct.exchange4
+      vpn-seeds-data-queue: vpn.data.direct.queue4
+      seeds-exchange: seeds.direct.exchange4
+      seeds-data-queue: seeds.data.direct.queue4
       # nlp queue
-      #nlp-exchange: server.data.direct.nlp.exchange
-      #nlp-queue: server.data.direct.nlp.queue
+      nlp-exchange: server.data.direct.nlp.exchange
+      nlp-queue: server.data.direct.nlp.queue
   jsch:
     host: 10.31.236.67
     port: 22
     user: '{cipher}3e61283a320530bdc597a3affac5a1f936bd820b55d891adafcfa89e2d17afbf'
-    password: '{cipher}34379c77ced6e1f11cc21e1ef3e1683759becc0db37ebf8f10a9e4a97b719635'
-    known-hosts: 10.31.236.67 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDRJvXfP9jGryZyiqWdm3LnGJuYnM7edxFjc/9ASPM+FwXYxlwdsKY6kU3e5o/QP7FE+PnN5KGLHN7QHQf7baXErxlE/315k6z8Lx3wDMHWModa9IrHOpuQoeVDq2KpM8nYnf4G4tWpPJEQW5s3btpR5ZYgrNV44WZiPWhuQXKaYeK5Ss8pvVUb2h+ZqIHt/No/kNeTKApODL7M9b1PCEh4hix1m9ZMTtDkQJretjRkNaW0/LGDN/ULvkRrPiF64G40Cr6C6UggilUTEL89B8zFGaYW/1Q4NuUzdBQ1Sn+/kQwQPJQN1orBd5KydCQQNb1Z9oq67sYPyxgdFKs4RRgl
+    password: '{cipher}4886b46b986a6660a7772c8ff180beb1b81c93b1ea5db96733b6a2ad0e855e1b'
+    known-hosts: 192.168.1.248 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDgkGQV57yZty+wjOdGL40+r7GBgjDHFt8q+O7KDa4lODPGZyBSnoKumsy8n4EX/mTLaGzhArWMGq2Vkxw9GxEL80kT3mrwFR1WMbHO6tzCfMGm/DiUONyP1kq9/bxTcwAUulYnVZZMdNBkSyf0T509fAB8OOjIL+2RHYmqNYU49UiFajhQLGW3BJ4scPaLdr3cq1hboKDkD53wZzDrzCXQlZmr/Fgu9FNKGGwHlBhwuEZJts94R6ACHjETLe5r5r5Ni1t/C5YL6slFNd+Tb89MxIQcO8YDD9i25V3VfnqMr2V0uW0JhWAb1hS6AQjod23yixFYN0pLP4ye0KJ4ABQH
     strict-host-key-checking: true
   model:
     mybatis:
@@ -213,8 +197,8 @@ application:
   admin:
     quartz:                           ### 是否开启后台管理的调度中心
       enable: true
-mifan:
-  proxy:
-    isUse: true
-    server: 10.31.236.67
-    port: 3128
+#mifan:
+  #proxy:
+    #isUse: false
+    #server: 192.168.1.138
+    #port: 3128
