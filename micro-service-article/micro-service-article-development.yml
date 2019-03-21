@@ -196,7 +196,7 @@ moon:
     password: '{cipher}cc02d136fabe3a608e9ea2990ffeaed53bedc5956aa13dd38bac8b73536c22e2'
     #known-hosts: 192.168.1.248 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDgkGQV57yZty+wjOdGL40+r7GBgjDHFt8q+O7KDa4lODPGZyBSnoKumsy8n4EX/mTLaGzhArWMGq2Vkxw9GxEL80kT3mrwFR1WMbHO6tzCfMGm/DiUONyP1kq9/bxTcwAUulYnVZZMdNBkSyf0T509fAB8OOjIL+2RHYmqNYU49UiFajhQLGW3BJ4scPaLdr3cq1hboKDkD53wZzDrzCXQlZmr/Fgu9FNKGGwHlBhwuEZJts94R6ACHjETLe5r5r5Ni1t/C5YL6slFNd+Tb89MxIQcO8YDD9i25V3VfnqMr2V0uW0JhWAb1hS6AQjod23yixFYN0pLP4ye0KJ4ABQH
     known-hosts: 192.168.1.229 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC+okYtHeLk2zMcyU/F35vV33F78gx2Ps/PPpFkoi71CE+jJUVtkTgfzV2NbL7tZMoPZdr/emaCLunp8Z6OafB6OALOH8J8GGGKGMq1mGzI8LMyymeeANvOkRJi26mpfA+5wP/Jp9pRIkrDIA7WO8h1JZYuXC1oCiW5FoJtgJwQnjdAkbDuLwc5MKd1E2Y9WYwyOf3Wr8zJLEEp+FPi0j9XAP4/yxPLg252QJcnxwxQnVoRQ7RP0UgXEKgFBN8ag76ZHzTiXEQ7VX7ZS0oUxC+WDPoQGP6Lx3d9t5+Z4773LkLXZBriXjkJ6o1d1bA27roq6zeRMGdTB01/KPnhfpGF
-    strict-host-key-checking: true
+    strict-host-key-checking: no
   model:
     mybatis:
       config-location: com/mifan/article/mybatis-config.xml
