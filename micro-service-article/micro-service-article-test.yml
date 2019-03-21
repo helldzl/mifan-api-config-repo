@@ -187,12 +187,12 @@ moon:
       nlp-exchange: article.data.direct.nlp.exchange
       nlp-queue: article.data.direct.nlp.queue
   jsch:
-    host: 192.168.1.248
+    host: 192.168.1.229
     port: 22
-    user: '{cipher}3e61283a320530bdc597a3affac5a1f936bd820b55d891adafcfa89e2d17afbf'
-    password: '{cipher}4886b46b986a6660a7772c8ff180beb1b81c93b1ea5db96733b6a2ad0e855e1b'
+    user: '{cipher}dacb38960b97b1bad51198c3da81dc30b8ceb8dae5e69b12898330c1b42b3403'
+    password: '{cipher}cc02d136fabe3a608e9ea2990ffeaed53bedc5956aa13dd38bac8b73536c22e2'
     known-hosts: 192.168.1.248 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDgkGQV57yZty+wjOdGL40+r7GBgjDHFt8q+O7KDa4lODPGZyBSnoKumsy8n4EX/mTLaGzhArWMGq2Vkxw9GxEL80kT3mrwFR1WMbHO6tzCfMGm/DiUONyP1kq9/bxTcwAUulYnVZZMdNBkSyf0T509fAB8OOjIL+2RHYmqNYU49UiFajhQLGW3BJ4scPaLdr3cq1hboKDkD53wZzDrzCXQlZmr/Fgu9FNKGGwHlBhwuEZJts94R6ACHjETLe5r5r5Ni1t/C5YL6slFNd+Tb89MxIQcO8YDD9i25V3VfnqMr2V0uW0JhWAb1hS6AQjod23yixFYN0pLP4ye0KJ4ABQH
-    strict-host-key-checking: true
+    strict-host-key-checking: no
   model:
     mybatis:
       config-location: com/mifan/article/mybatis-config.xml
