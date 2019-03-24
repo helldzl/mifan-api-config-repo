@@ -187,6 +187,9 @@ moon:
       # nlp queue
       nlp-exchange: article.data.direct.nlp.exchange
       nlp-queue: article.data.direct.nlp.queue
+      # nlp instruction queue
+      nlp-instruction-exchange: article.instruction.direct.nlp.exchange
+      nlp-instruction-queue: article.instruction.direct.nlp.queue
   jsch:
     #host: 192.168.1.248
     host: 192.168.1.229
