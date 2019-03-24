@@ -153,3 +153,12 @@ moon:
 ##########################
 ### APPLICATION CONFIG ###
 ##########################
+mifanxing:
+    rabbit:
+        queue: 
+            max-length: 100000
+            event-log:
+                normal: support.event-log.normal
+                wait: support.event-log.wait
+        exchange: support.topic-exchange
+        routing-key: support.#
