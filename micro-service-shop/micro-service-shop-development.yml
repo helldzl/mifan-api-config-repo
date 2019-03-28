@@ -197,8 +197,8 @@ application:
   admin:
     quartz:                           ### 是否开启后台管理的调度中心
       enable: true
-#mifan:
-  #proxy:
-    #isUse: false
-    #server: 192.168.1.138
-    #port: 3128
+mifan:
+  proxy:
+    isUse: false
+    server: 192.168.1.138
+    port: 3128
