@@ -191,14 +191,15 @@ application:
       segment: true
       index: true
       simliar: true
+      exchange-rate: true
   rest:
     support:
       host: static.mifanxing.com
   admin:
     quartz:                           ### 是否开启后台管理的调度中心
       enable: true
-#mifan:
-  #proxy:
-    #isUse: false
-    #server: 192.168.1.138
-    #port: 3128
+mifan:
+  proxy:
+    isUse: true
+    server: 10.31.236.67
+    port: 3128
