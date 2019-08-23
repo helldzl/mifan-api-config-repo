@@ -91,7 +91,7 @@ spring:
     host: 10.31.40.4
     port: 6379
     database: 0
-    timeout: 0
+    timeout: 5000
     pool:
       max-active: 800
       max-wait: 60000
