@@ -222,7 +222,7 @@ application:
       translation: false
       mail: false
       update:
-        timer: false
+        timer: true
       water:
         print: false
       history:
